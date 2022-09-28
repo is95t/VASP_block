@@ -34,13 +34,7 @@ In a terminal environment run the program `VASP_block.py`. This will then ask fo
 
 After the inputs the program will extract the data for the state properties. It will then reblock the data, starting from a block size of 1 until the optimal block is found. At which point a table will be printed giving the user the values for the optimal block for each state variable:
 
-`--------------------------------Optimal Blocking Statistics-------------------------------` <br />
-`                | Block Size      | Data per Block  | Mean            | Standard Error    ` <br />
-`------------------------------------------------------------------------------------------` <br />
-`Pressure        | 26.0            | 360.0           | -0.062          | 0.204             ` <br />
-`Temperature     | 25.0            | 375.0           | 3000.322        | 25.273            ` <br />
-`Volume          | 3.0             | 4500.0          | 2299.97         | 0.0               ` <br />
-`Total Energy    | 27.0            | 346.0           | -482.867        | 0.017             ` <br />
+![table](https://user-images.githubusercontent.com/95185273/192792471-08b285c9-a5fb-4fb4-956f-ffabadd5242b.PNG)
 
 Once the table is printed in the terminal, a plot is produced showing the data, mean and 1 standard deviation:
 
