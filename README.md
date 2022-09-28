@@ -9,7 +9,7 @@ VASP_block is a terminal program written in python, which allows users to extrac
 -	Volume (A<sup>3</sup>)
 -	Total Energy (eV)
 
-This allows processing of the fundamental state properties and covers most types of VASP calculation (NPT, NVE, etc.). Other properties (e.g. magnetism) can easily be added to the current framework. 
+This allows processing of the fundamental state properties and covers most types of VASP calculation (NVT, NVE, etc.). Other properties (e.g. magnetism) can easily be added to the current framework. 
 
 ### Why this program was written
 
@@ -36,7 +36,7 @@ After the inputs the program will extract the data for the state properties. It 
 
 ![table](https://user-images.githubusercontent.com/95185273/192792471-08b285c9-a5fb-4fb4-956f-ffabadd5242b.PNG)
 
-Once the table is printed in the terminal, a plot is produced showing the data, mean and 1 standard deviation:
+Once the table is printed in the terminal, a plot is produced showing the data, mean and 1 standard deviation. Given below is an example for an NVT calculation:
 
 ![output](https://user-images.githubusercontent.com/95185273/192791559-87fe378b-388e-4c49-95b7-9320424bd091.png)
 
