@@ -61,9 +61,10 @@ plot_data_sub(out_data[:, 1], opt_blocks[1, :], ax=axs[0, 1], d_type='temperatur
 plot_data_sub(out_data[:, 2], opt_blocks[2, :], ax=axs[1, 0], d_type='volume')
 plot_data_sub(out_data[:, 3], opt_blocks[3, :], ax=axs[1, 1], d_type='energy')
 legend_elements = [Line2D([0], [0], color='darkgrey', label='Data'),
-                  Line2D([0], [0], color='red', label='Mean Average'),
+                   Line2D([0], [0], color='red', label='Mean Average'),
                    Line2D([0], [0], linestyle='--', color='red', label='1 Standard Deviation'),
-                   Line2D([0], [0], linestyle='-.', color='red', label='95% Confidence Interval'),]
+                   #Line2D([0], [0], linestyle='-.', color='red', label='95% Confidence Interval'),
+                  ]
 fig.legend(handles=legend_elements, loc='upper right')
 fig.suptitle('Time Evolution of State Variables', fontsize=20)
 fig.tight_layout()
