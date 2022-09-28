@@ -2,11 +2,11 @@
 
 ### Introduction to VASP_block
 
-VASP_block is a terminal program written in python, which allows users to extract data from VASP output files (OUTCAR/OSZICAR) and reblock the data to gain meaningful statistical insights. Currently VASP_block can extract:
+VASP_block is a terminal program written in python, which allows users to extract data from VASP output files (`OUTCAR`/`OSZICAR`) and reblock the data to gain meaningful statistical insights. Currently VASP_block can extract:
 
 -	Pressure (GPa)
 -	Temperature (K)
--	Volume (A3)
+-	Volume (A<sup>3</sup>)
 -	Total Energy (eV)
 
 This allows processing of the fundamental state properties and covers most types of VASP calculation (NPT, NVE, etc.). Other properties (e.g. magnetism) can easily be added to the current framework. 
@@ -26,7 +26,7 @@ For users wishing to write their own python scripts, or use the program to build
 ## How the program works
 
 In a terminal environment run the program `VASP_block.py`. This will then ask for inputs from the user, these are:
--	`Enter the file path:` Give the program the location of the folder where the data is data (OUTCAR/OSZICAR files), e.g. C:/Users/bob/work/data/VASP/run_1/
+-	`Enter the file path:` Give the program the location of the folder where the data is data (`OUTCAR`/`OSZICAR` files), e.g. C:/Users/bob/work/data/VASP/run_1/
 -	`Enter the amount of steps to remove from the beginning of the data:` It is common for VASP calculations to include steps at the beginning that need to be removed (e.g. due to a change in cell volume). If no steps are needed to be removed, simply enter `0`
 -	`Save CSV?` The optimal blocks for the state properties will be printed, but can also be saved as a separate CSV file. Answer `yes`/`no`
 -	`Enter CSV file name` If a CSV is being save, enter the file name to save is as, this will be a `.CSV` file and will be saved in the same directory as the program is being ran from
