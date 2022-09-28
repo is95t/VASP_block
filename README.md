@@ -44,3 +44,7 @@ Plotting has been optimized for the subplot shown above, however can be easily c
 
 ### Final comments 
 I hope you find some use for this program and it helps tackle some issues I was facing which made me write it in the first place. Please get in touch with any comments (my email is on my profile). 
+
+###	References
+
+Flyvbjerg, H. and Petersen, H. G. (1998) Error Estimates on Averages of Correlated data, J. Chem. Phys., 91, pp. 461-466
