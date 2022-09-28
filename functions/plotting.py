@@ -51,8 +51,8 @@ def plot_data(data, stats, d_type=None, legend=False):
     plt.plot((0, len(data)), (stats[2], stats[2]), c='red', label='Mean')
     plt.plot((0, len(data)), ((stats[2] + std_dev), (stats[2] + std_dev)), c='red', linestyle='--', label='1 Standard Deviation')
     plt.plot((0, len(data)), ((stats[2] - std_dev), (stats[2] - std_dev)), c='red', linestyle='--')
-    plt.plot((0, len(data)), ((stats[2] + std_dev*1.96), (stats[2] + std_dev*1.96)), c='red', linestyle='-.', label='95% Confidence Interval')
-    plt.plot((0, len(data)), ((stats[2] - std_dev*1.96), (stats[2] - std_dev*1.96)), c='red', linestyle='-.')
+    #plt.plot((0, len(data)), ((stats[2] + std_dev*1.96), (stats[2] + std_dev*1.96)), c='red', linestyle='-.', label='95% Confidence Interval')
+    #plt.plot((0, len(data)), ((stats[2] - std_dev*1.96), (stats[2] - std_dev*1.96)), c='red', linestyle='-.')
     if legend == True:
         plt.legend(loc='upper right')
     return fig
@@ -102,5 +102,5 @@ def plot_data_sub(data, stats, ax, d_type=None):
     ax.plot((0, len(data)), (stats[2], stats[2]), c='red', label='Mean')
     ax.plot((0, len(data)), ((stats[2] + std_dev), (stats[2] + std_dev)), c='red', linestyle='--', label='1 Standard Deviation')
     ax.plot((0, len(data)), ((stats[2] - std_dev), (stats[2] - std_dev)), c='red', linestyle='--')
-    ax.plot((0, len(data)), ((stats[2] + std_dev*1.96), (stats[2] + std_dev*1.96)), c='red', linestyle='-.', label='95% Confidence Interval')
-    ax.plot((0, len(data)), ((stats[2] - std_dev*1.96), (stats[2] - std_dev*1.96)), c='red', linestyle='-.')
+    #ax.plot((0, len(data)), ((stats[2] + std_dev*1.96), (stats[2] + std_dev*1.96)), c='red', linestyle='-.', label='95% Confidence Interval')
+    #ax.plot((0, len(data)), ((stats[2] - std_dev*1.96), (stats[2] - std_dev*1.96)), c='red', linestyle='-.')
