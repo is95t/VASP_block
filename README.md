@@ -2,7 +2,7 @@
 
 ### Introduction to VASP_block
 
-VASP_block is a terminal program written in python, which allows users to extract data from VASP output files (`OUTCAR`/`OSZICAR`) and reblock the data to gain meaningful statistical insights. Currently VASP_block can extract:
+VASP_block is a terminal program written in python, which allows users to extract data from VASP output files (`OUTCAR`/`OSZICAR`) and reblock the data to gain accurate statistical insights. Currently VASP_block can extract:
 
 -	Pressure (GPa)
 -	Temperature (K)
@@ -13,7 +13,7 @@ This allows processing of the fundamental state properties and covers most types
 
 ### Why this program was written
 
-Most VASP calculations returns data in time series (where time is equivalent to ionic steps). However, this data is generally correlated, meaning the current data point is influenced by the previous data. If mean averages and errors are obtained from the raw data, these would not be statistically meaningful. Currently, block averaging has become the standard tool to deal with this in the computational chemistry field. The mathematics for this come from papers such as Flyvbjerg and Petersen (1998) and python modules, such as pyblock (https://pypi.org/project/pyblock/), implement this. The rational for writing this program are as follows:
+Most VASP calculations returns data in time series (where time is equivalent to ionic steps). However, this data is generally correlated, meaning the current data point is influenced by the previous data. If mean averages and errors are obtained from the raw data, these would not be statistically correct. Currently, block averaging has become the standard tool to deal with this in the computational chemistry field. The mathematics for this come from papers such as Flyvbjerg and Petersen (1998) and python modules, such as pyblock (https://pypi.org/project/pyblock/), implement this. The rational for writing this program are as follows:
 
 -	Currently users find themselves running data through many code snippets, and using many different modules to process the data, a more direct approach is beneficial.
 -	VASP_block uses only NumPy (https://numpy.org/) and matplotlib (https://matplotlib.org/stable/index.html) as external modules, which most users already have installed.
